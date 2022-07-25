@@ -1,0 +1,100 @@
+.footer{
+    border-top: 1px solid #BDBDBD;
+    margin-top: 150px;
+}
+.f-menu-wrapper{
+    width: 70%;
+    padding-left: 70px;
+}
+
+.newsletter{
+    width: 30%;
+    padding: 80px;
+    background-color: #474476;
+    max-width: 580px;
+}
+.newsletter h3{
+    font-size: 36px;
+    font-family: 'DM Serif Text', serif;
+    color: white;
+    margin-bottom: 12px;
+    font-weight: 400;
+
+}
+.newsletter p{
+    color: white;
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+}
+.newsletter button.over_input{
+    border: none;
+    background-color: #27235e;
+    color: white;
+    padding: 7px 15px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+
+}
+
+.footer .newsletter .form-control{
+height: 46px !important;
+}
+.footer .newsletter .form-floating>label {
+    font-size: 12px !important;
+    padding: 12px 27px !important;
+    color: #9b9b9b !important;
+    font-size: 14px !important;
+    font-family:'Poppins', sans-serif !important ;
+}
+
+
+.menu {
+    width: 20%;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    padding-bottom: 0.5rem;
+}
+.menu ul li a {
+    font-size: 14px;
+    color: #828282;
+    line-height: 19px;
+    letter-spacing: 0.2;
+    font-weight: 400px;
+    font-family:'Poppins', sans-serif;
+text-decoration: none;
+}
+.menu ul li a:hover{
+border-bottom:1px solid #828282 ;
+}
+h5.menu-title{
+    margin-left: 33px;
+    color: #333;
+    font-size: 16px;
+    /* font-weight: ; */
+    font-family:'Poppins', sans-serif;
+    margin-bottom: 20px;
+    font-weight:500
+}
+.footer .form-control {
+    /* height: 40px !important; */
+    border-radius: 0px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: inherit !important;
+  }
+
+
+/* bottom bar css  */
+
+.bottom_bar p {
+text-align: center;
+margin: 0px;
+padding:20px 00px ;
+font-size: 12px;
+color:#4f4f4f;
+font-family:'Poppins', sans-serif;
+}

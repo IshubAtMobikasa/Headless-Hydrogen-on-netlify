@@ -1,0 +1,68 @@
+
+/* .slick-slide img {
+    /* min-width: 100vw !important; */
+/* } */
+.card{
+    position: relative;
+}
+.card-body{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'DM Serif Text', serif;
+}
+
+/* .add_to_cart_btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 25px;
+} */
+
+.cart_btn{
+    background-color: #27235e;
+    color: white;
+    min-width: 168px;
+    padding: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  display: none;
+  border: none;
+}
+.cart_btn:hover{
+    background-color: #524F7E ;
+}
+
+.card:hover  .cart_btn{
+   display: block;
+}
+.arrows{
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* slider button (dots) */
+button.rec-dot{
+    background-color:#aaa;
+    box-shadow: 0 0 1px 3px rgba(255, 255, 255, 0);
+    height: 4px;
+    width: 4px;
+    margin: 2px;
+    
+  }
+  
+  button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+    box-shadow: 0 0 1px 3px rgba(235, 16, 16, 0);
+  }
+  button.rec-dot_active{
+    height: 4px;
+    width: 13px;
+    background-color: #27235e;
+    border-radius:20px;
+  }

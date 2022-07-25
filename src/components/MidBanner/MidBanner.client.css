@@ -1,0 +1,38 @@
+.midBanner{
+    height: 480px;
+    position: relative;
+    margin-top: 121px;
+
+}
+.midBanner_img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.midBanner_caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.midBanner_caption h1{
+    font-size: 48px;
+    font-family: "'DM Serif Text', serif'";
+    font-weight: bold;
+
+}
+
+.midBanner_caption p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.midBanner_caption button{
+    padding: 9px 30px;
+    border: none;
+    background-color: #27235e;
+    color: white;
+}

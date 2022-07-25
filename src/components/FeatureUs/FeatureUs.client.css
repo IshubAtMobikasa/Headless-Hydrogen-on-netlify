@@ -1,0 +1,18 @@
+.feature_us h1{
+    text-align: center;
+    font-family: 'DM Serif Text', serif;
+    font-size: 48px;
+}
+
+.featureBrand_img{
+    width: 90%;
+    height: 82px;
+}
+
+.feature_us .rec-dot{
+    display: none;
+}
+
+.mt-feature_us{
+    margin-top: 225px;
+}

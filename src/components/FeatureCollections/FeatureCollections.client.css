@@ -22,3 +22,16 @@
 .custom-margin{
     margin-top: 150px !important;
 }
+
+.view_all button{
+    padding: 9px 30px;
+    border: 1px solid #27235e;
+    background: transparent;
+    display: block;
+    margin: 00px auto;
+    min-width: 168px;
+}
+.view_all button:hover{
+    background-color: #27235e;
+    color: white;
+}

@@ -1,0 +1,39 @@
+.best_seller_slider .sc-iBkjds.kdCslO.rec.rec-pagination{
+    display: none !important;
+}
+
+.best_seller_slider .card .card-body h4{
+    font-size: 18px;
+    font-family: 'DM Serif Text', serif;
+}
+
+.pricing h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.pricing span{
+    font-size: 12px;
+}
+.product_value{
+    color: #828282;
+    font-family: 'Poppins', sans-serif;
+}
+
+.best_seller_text{
+    text-align: center;
+
+}
+.best_seller_text h1{
+    font-size: 48px;
+    font-family: 'DM Serif Text', serif;
+}
+
+.best_seller_text p{
+    font-family: 'Poppins', sans-serif;
+    color: #828282;
+}
+
+.gaping{
+    margin-top:100px ;
+}

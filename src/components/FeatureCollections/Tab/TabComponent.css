@@ -1,0 +1,93 @@
+.react-tabs__tab {
+    display: inline-block;
+    border-bottom: .3px solid #e1e1e1 !important;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    
+}
+.react-tabs__tab:focus-visible{
+    outline: none !important;
+}
+::-webkit-scrollbar {display:none;}
+
+.react-tabs__tab--selected {
+    border-bottom: 1px solid #27235e !important;
+    background: transparent !important;
+    border-color: #aaa;
+    color: #27235e;
+    border-radius: 0px !important;
+    border-bottom: 2px solid;
+}
+
+.react-tabs__tab-panel .react-tabs > ul > li {
+    display: inline-block;
+    list-style: none;
+    background: rgb(39 35 94 / 10%);
+    margin: 0 10px;
+    padding: 8px;
+    border-radius: 25px;
+    max-width: 177px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.react-tabs__tab-list {
+    border-bottom: 0px solid #aaa !important;
+    margin: 0 0 10px;
+    padding: 0;
+    display: flex;
+    margin: 30px 0 0;
+    padding: 0;
+    justify-content: center;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.sub_list{
+    display: inline-block;
+    list-style: none;
+    background: rgb(39 35 94 / 10%);
+    margin: 0 10px;
+    padding: 8px;
+    border-radius: 25px;
+    max-width: 177px;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+}
+
+.active_list_element .react-tabs__tab--selected {
+    background: #524F7E !important;
+    display: inline-block;
+    list-style: none;
+    background: rgb(39 35 94 / 10%);
+    margin: 0 10px;
+    padding: 8px;
+    border-radius: 25px !important;
+    max-width: 177px;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+@media(max-width:767px){
+    .react-tabs__tab-list {
+        border-bottom: 0px solid #aaa !important;
+        margin: 0 0 10px;
+        padding: 0;
+        display: flex;
+        margin: 30px 0 0;
+        padding: 0;
+        justify-content: flex-start;
+        overflow: auto;
+        white-space: nowrap;
+    }
+}

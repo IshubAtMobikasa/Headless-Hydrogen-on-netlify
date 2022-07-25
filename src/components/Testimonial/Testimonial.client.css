@@ -1,0 +1,29 @@
+.gaping{
+    margin-top:150px ;
+}
+.testimonial{
+    width: 548px;
+    margin: 0 auto;
+}
+.testimonial .testimonial_heading h1{
+    text-align: center;
+    padding-block: 48px;
+    font-family: "'DM Serif Text', serif'";
+    font-weight: bold;
+}
+
+.testimonial_container{
+    text-align: center;
+}
+
+.rec-arrow-left{
+    display: none;
+}
+
+.rec-arrow-right{
+    display: none;
+}
+
+.testimonial_gaping{
+    margin-top: 100px;
+}

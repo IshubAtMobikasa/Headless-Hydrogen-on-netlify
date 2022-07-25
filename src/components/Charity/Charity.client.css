@@ -1,0 +1,39 @@
+.Charity{
+    height: 480px;
+    position: relative;
+    margin-top: 121px;
+    color: white;
+
+}
+.Charity_img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.Charity_caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 48%;
+    text-align: center;
+}
+
+.Charity_caption h1{
+    font-size: 48px;
+    font-family: "'DM Serif Text', serif'";
+    font-weight: bold;
+
+}
+
+.Charity_caption p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.Charity_caption button{
+    padding: 9px 30px;
+    border: none;
+    color: #27235e;
+    background-color: white;
+}
