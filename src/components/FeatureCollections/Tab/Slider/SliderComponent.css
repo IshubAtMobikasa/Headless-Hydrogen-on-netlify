@@ -2,6 +2,9 @@
 /* .slick-slide img {
     /* min-width: 100vw !important; */
 /* } */
+
+
+
 .card{
     position: relative;
 }
@@ -21,7 +24,15 @@
     align-items: center;
     padding-top: 25px;
 } */
-
+.card_img{
+  overflow: hidden;
+}
+.card_img img{
+  transition: .5s;
+} 
+.card_img img:hover {
+  transform: scale(1.1);
+}
 .cart_btn{
     background-color: #27235e;
     color: white;
@@ -65,4 +76,11 @@ button.rec-dot{
     width: 13px;
     background-color: #27235e;
     border-radius:20px;
+  }
+
+
+  @media(max-width:576px){
+    .arrows{
+display: none;
+  }
   }

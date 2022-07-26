@@ -1,14 +1,16 @@
 import React from "react";
-import { Container } from "./../BootstrapIndex";
-import './FeatureCollections.client.css'
+import { Container,Row,Col } from "./../BootstrapIndex";
+// import './FeatureCollections.client.css'
 import TabComponent from "./Tab/TabComponent.client";
 
 
 const FeatureCollections = ({myData}) => {
   console.log(myData)
+
   return (
     <div>
       <Container>
+
         <div className="text-block custom-margin">
           <h2 className="main-heading">
             Skincare needs

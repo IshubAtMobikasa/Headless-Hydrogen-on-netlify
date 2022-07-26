@@ -2,7 +2,7 @@ import React from 'react'
 import {Button,Container, Navbar, Nav, NavDropdown,FloatingLabel,Form} from '../BootstrapIndex'
 import { NavbarItems } from '../../Assets/NavbarItems'
 import {FaSearch} from "react-icons/fa";
-import './Header.css'
+// import './Header.css'
 import logo from './../../Assets/Logo.svg'
 import user from './../../Assets/user.svg'
 import cart from './../../Assets/cart.svg'
@@ -26,7 +26,7 @@ const Header = ({menu}) => {
         <FloatingLabel
             controlId="floatingInput"
             label="Search Products, categories ..."
-            className="d-lg-block d-none "
+            className=""
           >
             <Form.Control type="email" placeholder="name@example.com" size="md"  />
           </FloatingLabel>
@@ -89,8 +89,8 @@ const Header = ({menu}) => {
                 )}
               </React.Fragment>
             ))}
-            <Nav.Link href="#home"><img src={user} alt="user"/></Nav.Link>
-            <Nav.Link href="#home"><img src={cart} alt="cart" /></Nav.Link>
+            <Nav.Link href="#home" className="d-lg-block d-none"><img src={user} alt="user"/></Nav.Link>
+            <Nav.Link href="#home" className="d-lg-block d-none"><img src={cart} alt="cart" /></Nav.Link>
           </Nav>
 
         </Navbar.Collapse>

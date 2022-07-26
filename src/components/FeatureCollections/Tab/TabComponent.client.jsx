@@ -1,7 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "./../../BootstrapIndex";
 import SliderComponent from "./Slider/SliderComponent.client";
-import './TabComponent.css'
+// import './TabComponent.css'
 const TabComponent = ({ product }) => {
   console.log(product, "from the Tab TabComponent");
   const {
@@ -20,17 +20,7 @@ const TabComponent = ({ product }) => {
   return (
     <div>
       <Tabs className="container">
-        <TabList
-          style={{
-            fontSize: "20px",
-            margin: "20px",
-            color: "rgb(130, 130, 130)",
-            width: "100%",
-            display: "flex",
-            justifyContent: "space-around",
-            padding: "5px",
-          }}
-        >
+        <TabList>
           <Tab>Skin</Tab>
           <Tab>Hair</Tab>
           <Tab>Regimes</Tab>

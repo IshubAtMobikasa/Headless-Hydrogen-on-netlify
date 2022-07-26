@@ -1,6 +1,6 @@
 import React from 'react'
-import './Footer.client.css'
-import { FloatingLabel,Form } from 'react-bootstrap'
+// import './Footer.client.css'
+import { Container, FloatingLabel,Form, Row,Col } from 'react-bootstrap'
 import BottomBar from './BottomBar/BottomBar'
 
 const Footer = ({menu}) => {
@@ -13,11 +13,13 @@ const Footer = ({menu}) => {
     ]
   return (
     <>
-    <div className='footer d-flex justify-content-between'>
+    <Container fluid className='p-0'>
+
+    <div className='footer d-flex justify-content-between flex-wrap'>
         <div className="f-menu-wrapper d-flex justify-content-start pt-5">
             {
                 menu.items.map((item)=>(
-                    <div className="menu p-3">
+                    <div className="menu p-md-3">
                         <h5 className="menu-title">
                             {item.title}
                         </h5>
@@ -50,6 +52,7 @@ const Footer = ({menu}) => {
             </React.Fragment>
         ))
     }
+    </Container>
     </>
   )
 }

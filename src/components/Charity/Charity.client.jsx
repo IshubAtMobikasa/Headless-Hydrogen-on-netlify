@@ -1,7 +1,7 @@
 import { Image } from '@shopify/hydrogen'
 import React from 'react'
 import {Container} from './../BootstrapIndex'
-import './Charity.client.css'
+// import './Charity.client.css'
 
 const Charity = ({product}) => {
     console.log(product,"show product")

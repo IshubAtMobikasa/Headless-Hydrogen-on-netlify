@@ -1,12 +1,13 @@
 import { Image } from "@shopify/hydrogen";
 import React from "react";
-import { Container } from "./../BootstrapIndex";
-import "./HeroSlider.client.css";
+import { Container,Row,Col } from "./../BootstrapIndex";
+// import "./HeroSlider.client.css";
 
 const HeroSlider = ({ banner }) => {
   return (
     <div>
       <Container>
+
         {banner.heroBanners.nodes.map((b) => (
           <React.Fragment key={b.id}>
             <div className="text-block py-5">

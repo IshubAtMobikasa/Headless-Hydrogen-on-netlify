@@ -1,12 +1,14 @@
 import { Image } from '@shopify/hydrogen'
 import React from 'react'
-import {Container} from './../BootstrapIndex'
-import './MidBanner.client.css'
+import {Container,Row,Col} from './../BootstrapIndex'
+// import './MidBanner.client.css'
+
 
 const MidBanner = ({banner}) => {
     console.log(banner,"show banner")
   return (
     <Container>
+
     <div className="midBanner">
         <Image className='midBanner_img' src={banner.featuredImage.url} alt={banner.featuredImage.altText} width="100" height={100}></Image>
         <div className="midBanner_caption">

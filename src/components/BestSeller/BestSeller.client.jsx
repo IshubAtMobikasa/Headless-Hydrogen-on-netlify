@@ -4,7 +4,7 @@ import ReactElasticCarousel,{consts} from 'react-elastic-carousel'
 import LeftAngle from './../../Assets/left_arrow.png'
 import RightAngle from './../../Assets/right_arrow.png'
 import { Image } from '@shopify/hydrogen'
-import './BestSeller.client.css'
+// import './BestSeller.client.css'
 
 const BestSeller = ({products}) => {
     console.log(products,"best seller")
@@ -14,6 +14,12 @@ const BestSeller = ({products}) => {
             <button className="arrows" onClick={onClick} disabled={isEdge}>{pointer}</button>
         )
       }
+      const breakPoints = [ 
+        {width:576,itemsToShow:1},
+        {width:768,itemsToShow:2},
+        {width:1024,itemsToShow:3},
+       
+      ]
   return (
     <div className='gaping'>
         <Container>
@@ -23,7 +29,7 @@ const BestSeller = ({products}) => {
                 <p>{products.description}</p>
             </div>
             <div className="best_seller_slider">
-                <ReactElasticCarousel  renderArrow={myArrow} itemsToScroll={1} itemsToShow={3} itemPadding={[0,0]} className="pt-5" >
+                <ReactElasticCarousel breakPoints={breakPoints}  renderArrow={myArrow} itemsToScroll={1} itemsToShow={3} itemPadding={[0,0]} className="pt-5" >
                     {products.products.nodes.map((product)=>(
                         <div className='slider_container' key={product.id}>
                             {

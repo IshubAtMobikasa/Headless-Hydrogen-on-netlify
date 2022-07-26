@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactElasticCarousel from 'react-elastic-carousel'
-import './Testimonial.client.css'
+// import './Testimonial.client.css'
 import quote from './../../Assets/quote.webp'
+import { Col, Container, Row } from 'react-bootstrap'
 
 
 
@@ -25,6 +26,8 @@ const Testimonial = () => {
         ]
     
   return (
+
+        <Container>
     <div className="testimonial testimonial_gaping">
         <div className="testimonial_heading">
             <h1>87.2% customers rate<br/>us 4 stars and above</h1>
@@ -40,7 +43,8 @@ const Testimonial = () => {
                 ))
             }
         </ReactElasticCarousel>
-    </div>
+        </div>
+        </Container>
   )
 }
 

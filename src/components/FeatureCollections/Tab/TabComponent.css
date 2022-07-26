@@ -49,6 +49,15 @@
     overflow: auto;
     white-space: nowrap;
 }
+/* .react-tabs__tab-list{
+  font-size: "20px";
+  margin: "20px";
+  color: "rgb(130, 130, 130)";
+  width: "100%";
+  display: "flex";
+  justify-content: "space-around";
+  padding: "5px";
+} */
 
 .sub_list{
     display: inline-block;
@@ -78,8 +87,8 @@
     color: white;
 }
 
-@media(max-width:767px){
-    .react-tabs__tab-list {
+@media(max-width:768px){
+    /* .react-tabs__tab-list {
         border-bottom: 0px solid #aaa !important;
         margin: 0 0 10px;
         padding: 0;
@@ -89,5 +98,15 @@
         justify-content: flex-start;
         overflow: auto;
         white-space: nowrap;
+    } */
+
+    .active_list_element .react-tabs__tab--selected{
+        font-size: 14px;
+        padding: 8px 16px;
     }
+    .react-tabs__tab-list{
+        justify-content: start;
+        font-size: 14px;
+    }
+    
 }

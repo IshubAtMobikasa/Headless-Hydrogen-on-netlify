@@ -98,3 +98,38 @@ font-size: 12px;
 color:#4f4f4f;
 font-family:'Poppins', sans-serif;
 }
+
+@media(max-width:1024px){
+    
+    .footer{
+        flex-direction: column-reverse;
+    }
+.newsletter{
+    width: 100%;
+    max-width: 1024px;
+}
+.f-menu-wrapper{
+    width: 90%;
+    justify-content: space-between !important;
+    padding: 0px;    
+
+
+}
+}
+
+
+
+@media(max-width:576px){
+    
+ .f-menu-wrapper{
+    flex-wrap: wrap;
+    
+ }
+ .menu{
+    width: 50%;
+ }
+ .newsletter{
+    padding:80px 10px ;
+    text-align: center;
+ }
+}
