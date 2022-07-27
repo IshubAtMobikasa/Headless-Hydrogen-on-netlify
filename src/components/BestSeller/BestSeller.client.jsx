@@ -37,7 +37,7 @@ const BestSeller = ({products}) => {
                             }
                             <Col className="mx-2">
                             <Card className="border-0">  
-                                <Image src={product.featuredImage.url} alt={product.featuredImage.altText} height="100" width="100" className="card-img img-fluid"></Image> 
+                                <Image src={product.featuredImage.url} alt={`product.featuredImage.altText`} height="100" width="100" className="card-img img-fluid"></Image> 
                                 <Card.Body>
                                     <h4>
                                         {product.title}

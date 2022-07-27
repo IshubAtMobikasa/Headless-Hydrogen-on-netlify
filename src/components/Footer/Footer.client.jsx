@@ -19,14 +19,14 @@ const Footer = ({menu}) => {
         <div className="f-menu-wrapper d-flex justify-content-start pt-5">
             {
                 menu.items.map((item)=>(
-                    <div className="menu p-md-3">
+                    <div className="menu p-md-3" key={item.id}>
                         <h5 className="menu-title">
                             {item.title}
                         </h5>
                         <ul>
                             {
                                 item.items.map((subItem)=>(
-                                    <li><a href='#'>{subItem.title}</a></li>
+                                    <li key={subItem.id}><a href='#'>{subItem.title}</a></li>
                                 ))
                             }
                         </ul>

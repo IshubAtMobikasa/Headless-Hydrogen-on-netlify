@@ -10,7 +10,7 @@ const MidBanner = ({banner}) => {
     <Container>
 
     <div className="midBanner">
-        <Image className='midBanner_img' src={banner.featuredImage.url} alt={banner.featuredImage.altText} width="100" height={100}></Image>
+        <Image className='midBanner_img' src={banner.featuredImage.url} alt={`banner.featuredImage.altText`} width="100" height={100}></Image>
         <div className="midBanner_caption">
             <h1>{banner.title}</h1>
             <p>{banner.description}</p>

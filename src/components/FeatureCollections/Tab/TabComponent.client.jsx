@@ -20,7 +20,7 @@ const TabComponent = ({ product }) => {
   return (
     <div>
       <Tabs className="container">
-        <TabList>
+        <TabList className={`react-tabs__tab-list parent`}>
           <Tab>Skin</Tab>
           <Tab>Hair</Tab>
           <Tab>Regimes</Tab>

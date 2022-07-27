@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "shopify hydrogen dev",
-    "build": "shopify hydrogen build",
+    "build": "shopify hydrogen build --entry src/App.server --target node",
     "preview": "shopify hydrogen preview"
   },
   "devDependencies": {

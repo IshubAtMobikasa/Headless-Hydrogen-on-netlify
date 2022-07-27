@@ -1,11 +1,29 @@
 body::-webkit-scrollbar{
     overflow: auto;
 }
-
+:root{
+  --paragraph-font:'Poppins', sans-serif;
+  --heading-font:'DM Serif Text', serif
+}
 
 /* Header Css  */
 
 /* floating input css  */
+.header .announcementBar {
+  background-color: #f3f3f3;
+}
+.header .announcementBar p{
+
+  color: #4f4f4f;
+  text-align: center;
+  padding: 8px 20px;
+  font-family: var(--paragraph-font);
+  font-size:14px ;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0px;
+
+}
 .fl_wrapper svg{
     position: absolute;
     left: 7px;
@@ -182,7 +200,7 @@ body::-webkit-scrollbar{
     height: 15px;
     width: 15px;
     border: none;
-    background-image: url('./../../Assets/toggleIcon.svg');
+    background-image: url('./Assets/toggleIcon.svg');
     vertical-align: -0.2em;
   }
   
@@ -485,9 +503,7 @@ body::-webkit-scrollbar{
 /* Tab Css */
 .react-tabs__tab {
     display: inline-block;
-    border-bottom: .3px solid #e1e1e1 !important;
-    border-bottom: none;
-    bottom: -1px;
+    border-bottom: 1px solid #e1e1e1 !important;
     position: relative;
     list-style: none;
     padding: 6px 12px;
@@ -534,7 +550,7 @@ body::-webkit-scrollbar{
     overflow: auto;
     white-space: nowrap;
 }
-/* .react-tabs__tab-list{
+.react-tabs__tab-list{
   font-size: "20px";
   margin: "20px";
   color: "rgb(130, 130, 130)";
@@ -542,7 +558,7 @@ body::-webkit-scrollbar{
   display: "flex";
   justify-content: "space-around";
   padding: "5px";
-} */
+}
 
 .sub_list{
     display: inline-block;

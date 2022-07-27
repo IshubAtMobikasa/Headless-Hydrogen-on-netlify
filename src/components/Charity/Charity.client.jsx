@@ -8,7 +8,7 @@ const Charity = ({product}) => {
   return (
     <Container>
     <div className="Charity">
-        <Image className='Charity_img' src={product.featuredImage.url} alt={product.featuredImage.altText} width="100" height={100}></Image>
+        <Image className='Charity_img' src={product.featuredImage.url} alt={`product.featuredImage.altText`} width="100" height={100}></Image>
         <div className="Charity_caption">
             <h1>{product.title}</h1>
             <p>{product.description}</p>

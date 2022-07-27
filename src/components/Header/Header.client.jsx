@@ -10,6 +10,9 @@ const Header = ({menu}) => {
   console.log(menu,"hM")
   return (
     <div className="header">
+      <div className="announcementBar">
+      <p>Exclusive! Free Skin Tester worth Rs. 199 with every order</p>
+      </div>
     <Navbar expand="lg" className="header_nav" sticky="top">
       <Container>
         <Navbar.Brand>

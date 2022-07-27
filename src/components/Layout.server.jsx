@@ -273,6 +273,7 @@ const SHOP_QUERY = gql`
     }
     products(first:15){
       nodes{
+        id
         options(first:5){
           values
         }
@@ -314,18 +315,23 @@ const SHOP_QUERY = gql`
   FooterMenu:menu(handle: "footer"){
     items{
       title
+      id
       items{
         title
+        id
       }
     }
   }
   HeaderMenu:menu(handle: "main-menu"){
     items{
       title
+      id
       items{
         title
+        id
         items{
           title
+          id
         }
       }
     }
