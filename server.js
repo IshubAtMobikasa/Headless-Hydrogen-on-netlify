@@ -1,14 +1,30 @@
-// Polyfill Web APIs like `fetch` and `ReadableStream`
-require('@shopify/hydrogen/web-polyfills');
+import {hydrogenMiddleware} from '@shopify/hydrogen/middleware';
+import serveStatic from 'serve-static';
+import compression from 'compression';
+import bodyParser from 'body-parser';
+import connect from 'connect';
+import path from 'path';
 
-const fs = require('fs');
-const handleRequest = require('./dist/node');
+const port = process.env.PORT || 8080;
 
-const indexTemplate = fs.readFileSync('./dist/client/index.html', 'utf-8');
+// Initialize your own server framework like connect
+const app = connect();
 
-module.exports = function (request, response) {
-  handleRequest(request, {
-    indexTemplate,
-    streamableResponse: response,
-  });
-};
+// Add desired middlewares and handle static assets
+app.use(compression());
+app.use(serveStatic(path.resolve(__dirname, '../', 'client'), {index: false}));
+app.use(bodyParser.raw({type: '*/*'}));
+
+app.use(
+  '*',
+  hydrogenMiddleware({
+    getServerEntrypoint: () => import('./src/App.server'),
+    indexTemplate: () => import('./dist/client/index.html?raw'),
+    // Optional: Provide a custom strategy for caching in production. Defaults to in-memory.
+    cache: customCacheImplementation,
+  })
+);
+
+app.listen(port, () => {
+  console.log(`Hydrogen server running at http://localhost:${port}`);
+});
