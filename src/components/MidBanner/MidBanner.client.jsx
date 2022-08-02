@@ -7,7 +7,7 @@ import {Container,Row,Col} from './../BootstrapIndex'
 const MidBanner = ({banner}) => {
     console.log(banner,"show banner")
   return (
-    <Container>
+    <Container className="page_width">
 
     <div className="midBanner">
         <Image className='midBanner_img' src={banner.featuredImage.url} alt={`banner.featuredImage.altText`} width="100" height={100}></Image>

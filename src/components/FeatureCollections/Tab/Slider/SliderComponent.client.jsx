@@ -20,7 +20,8 @@ const SliderComponent = ({product}) => {
   }
   const breakPoints = [ 
     {width:576,itemsToShow:1},
-    {width:768,itemsToShow:2},
+    {width:576,itemsToShow:2},
+    {width:768,itemsToShow:3},
     {width:1024,itemsToShow:3},
    
   ]
@@ -39,10 +40,10 @@ const SliderComponent = ({product}) => {
                     <div className="card_img">
                     <Card.Img
                       src={product.featuredImage.url}
-                      style={{height: '322px'}}
+                      
                     />
                     </div>
-                    <Card.Body style={{height:'73px'}}>
+                    <Card.Body>
                       <span>{product.title}</span>
                     </Card.Body>
                    

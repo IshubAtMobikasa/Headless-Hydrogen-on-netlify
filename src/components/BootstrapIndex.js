@@ -8,7 +8,9 @@ export {
   Form,
   Col,
   Card,
-  Row
+  Row,
+  Offcanvas,
+  Accordion
 } from "react-bootstrap";
 
 export { Tab, Tabs, TabList, TabPanel } from "react-tabs";

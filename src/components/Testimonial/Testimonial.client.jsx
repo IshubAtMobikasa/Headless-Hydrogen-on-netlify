@@ -30,7 +30,7 @@ const Testimonial = () => {
     
   return (
 
-        <Container>
+        <Container className="page_width">
     <div className="testimonial testimonial_gaping">
         <div className="testimonial_heading">
             <h1>87.2% customers rate<br/>us 4 stars and above</h1>

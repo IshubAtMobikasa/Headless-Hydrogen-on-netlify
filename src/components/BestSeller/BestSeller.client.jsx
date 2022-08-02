@@ -16,13 +16,14 @@ const BestSeller = ({products}) => {
       }
       const breakPoints = [ 
         {width:576,itemsToShow:1},
-        {width:768,itemsToShow:2},
+        {width:576,itemsToShow:2},
+        {width:768,itemsToShow:3},
         {width:1024,itemsToShow:3},
        
       ]
   return (
     <div className='gaping'>
-        <Container>
+        <Container className="page_width">
         <div className="best_seller">
             <div className="best_seller_text">
                 <h1>{products.title}</h1>

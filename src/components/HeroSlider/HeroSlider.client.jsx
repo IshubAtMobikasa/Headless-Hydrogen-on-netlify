@@ -6,11 +6,11 @@ import { Container,Row,Col } from "./../BootstrapIndex";
 const HeroSlider = ({ banner }) => {
   return (
     <div>
-      <Container>
+      <Container className="page_width">
 
         {banner.heroBanners.nodes.map((b) => (
           <React.Fragment key={b.id}>
-            <div className="text-block py-5">
+            <div className="text-block pt-5 pb-4">
               <h1 className="main-heading">{b.title}</h1>
               <p className="subtitle">{b.descriptionHtml}</p>
             </div>

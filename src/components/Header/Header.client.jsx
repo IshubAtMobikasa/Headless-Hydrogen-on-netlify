@@ -1,24 +1,45 @@
 import React from 'react'
-import {Button,Container, Navbar, Nav, NavDropdown,FloatingLabel,Form} from '../BootstrapIndex'
-import { NavbarItems } from '../../Assets/NavbarItems'
-import {FaSearch} from "react-icons/fa";
+import {Container, Navbar, Nav, NavDropdown,FloatingLabel,Form,Offcanvas,Button,Accordion} from '../BootstrapIndex'
 // import './Header.css'
 import logo from './../../Assets/Logo.svg'
 import user from './../../Assets/user.svg'
 import cart from './../../Assets/cart.svg'
+import search from './../../Assets/search.svg'
+import Hamburger from './../../Assets/Hamburger.svg'
+import { useState } from 'react';
+
 const Header = ({menu}) => {
   console.log(menu,"hM")
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const [showBodyCare, setShowBodyCare] = useState(false);
+
+  const handleCloseBodyCare = () => setShowBodyCare(false);
+  const handleShowBodyCare = () => setShowBodyCare(true);
+
+  const [showSkinCare, setShowSkinCare] = useState(false);
+
+  const handleCloseSkinCare = () => setShowSkinCare(false);
+  const handleShowSkinCare = () => setShowSkinCare(true);
+
   return (
-    <div className="header">
-      <div className="announcementBar">
+    <>
+          <div className="announcementBar">
       <p>Exclusive! Free Skin Tester worth Rs. 199 with every order</p>
       </div>
-    <Navbar expand="lg" className="header_nav" sticky="top">
+    <div className="header-wrape sticky-top d-none d-lg-block">
+    <div className="header position-relative">
+
+    <Navbar expand="lg" className="header_nav">
       <Container>
-        <Navbar.Brand>
-          <img src={logo} alt="Logo" className='me-3' />
-        </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Brand>
+          <img src={logo} alt="Logo" className='me-lg-3' />
+        </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
 
         <div className="fl_wrapper position-relative">
@@ -42,7 +63,7 @@ const Header = ({menu}) => {
               <React.Fragment key={i}>
                 {NavItem?.items.length>1 ? (
                   <>
-                    <NavDropdown title={NavItem.title} className="has-megamenu" >
+                    <NavDropdown title={NavItem.title} className={`has-megamenu`}   >
                       <div className="custom">
                         {NavItem?.items?.map((subItem, i) => (
                           <React.Fragment key={i}>
@@ -61,7 +82,7 @@ const Header = ({menu}) => {
                                         <React.Fragment key={i}>
                                           <div className="itemsOfSubItem">
                                             <NavDropdown.Item>
-                                              <span>{`${itemsOfSubItem?.title} x`}</span>
+                                              <span>{itemsOfSubItem?.title}</span>
                                             </NavDropdown.Item>
                                           </div>
                                         </React.Fragment>
@@ -92,14 +113,89 @@ const Header = ({menu}) => {
                 )}
               </React.Fragment>
             ))}
-            <Nav.Link href="#home" className="d-lg-block d-none"><img src={user} alt="user"/></Nav.Link>
-            <Nav.Link href="#home" className="d-lg-block d-none"><img src={cart} alt="cart" /></Nav.Link>
+
           </Nav>
 
         </Navbar.Collapse>
+        <div className='h-icon d-flex'>
+            <img src={search} alt="cart" className='search-icon d-none'/>
+            <img src={user} alt="user"/>
+            <img src={cart} alt="cart" />
+        </div>
       </Container>
     </Navbar>
     </div>
+    </div>
+    <div className="mobileHeader">
+
+ 
+       <div className="btn" onClick={handleShow}>
+    
+    <img src={Hamburger} alt="" />
+ 
+        </div>           
+      {/* <Navbar.Toggle onClick={handleShow} /> */}
+      {/* <button onClick={handleShow} class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      {/* <span class="navbar-toggler-icon"></span> */}
+      {/* <img src={Hamburger} alt="" /> */}
+    {/* </button> */} 
+      <Offcanvas show={show} onHide={handleClose} >
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+              <ul>
+              <Accordion defaultActiveKey="0" flush>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Body>
+                <ul className='child_ul'>
+                  <li>
+                <Button variant="primary" onClick={handleShowSkinCare}>
+        Skin Care
+      </Button>
+
+      <Offcanvas show={showSkinCare} onHide={handleCloseSkinCare} placement={'end'}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
+      </li>
+
+
+      <li>
+                <Button variant="primary" onClick={handleShowBodyCare}>
+        Skin Care
+      </Button>
+
+      <Offcanvas show={showBodyCare} onHide={handleCloseBodyCare} placement={'end'}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
+      </li>
+                </ul>
+        </Accordion.Body>
+      </Accordion.Item>
+      
+    </Accordion>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+              </ul> 
+
+        </Offcanvas.Body>
+      </Offcanvas>
+      </div>
+    </>
   )
 }
 

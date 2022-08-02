@@ -6,7 +6,7 @@ import {Container} from './../BootstrapIndex'
 const Charity = ({product}) => {
     console.log(product,"show product")
   return (
-    <Container>
+    <Container className="page_width">
     <div className="Charity">
         <Image className='Charity_img' src={product.featuredImage.url} alt={`product.featuredImage.altText`} width="100" height={100}></Image>
         <div className="Charity_caption">

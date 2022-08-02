@@ -9,7 +9,7 @@ const FeatureCollections = ({myData}) => {
 
   return (
     <div>
-      <Container>
+      <Container className="page_width">
 
         <div className="text-block custom-margin">
           <h2 className="main-heading">

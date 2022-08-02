@@ -19,7 +19,7 @@ const Footer = ({menu}) => {
         <div className="f-menu-wrapper d-flex justify-content-start pt-5">
             {
                 menu.items.map((item)=>(
-                    <div className="menu p-md-3" key={item.id}>
+                    <div className="menu p-xl-3" key={item.id}>
                         <h5 className="menu-title">
                             {item.title}
                         </h5>
@@ -35,6 +35,7 @@ const Footer = ({menu}) => {
             }
         </div>
         <div className="newsletter">
+            <div className="newsletter_wrapper">
             <h3>Become a Re’equil insider</h3>
             <p>Get access to research, guides, and insider sale events</p>
             <div className="input_wrapper position-relative">
@@ -42,6 +43,7 @@ const Footer = ({menu}) => {
           <Form.Control type="email" placeholder="name@example.com" />
         </FloatingLabel>
         <button className='over_input'>Subscribe</button>
+        </div>
         </div>
         </div>
     </div>
